@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+		<title>Process &amp; Development Best Practices for Non-Profits</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Desmond Morris">
@@ -38,7 +38,7 @@
 			<div class="slides">
 
 				<section>
-					<h2>Process & Development Best Practices for Non-Profits</h2>
+					<h2>Process &amp; Development Best Practices for Non-Profits</h2>
 					<p>
 						<small>By Desmond Morris & Matt Holford of DoSomething.org</small>
 					</p>
@@ -48,52 +48,113 @@
 					<h2>DoSomething.org</h2>
 
 					<ul>
-					  <li>Nationwide cause campaigns</li>
-					  <li>Drupal 5 > Drupal 6 > Drupal 7</li>
-					  <li>Technical Debt</li>
-					  <li>Loosely enforced development practices</li>
+					  <li class="fragment">Nationwide cause campaigns</li>
+					  <li class="fragment">Platform: Drupal</li>
+					  <li class="fragment">Members: 2 million young people (13-25)</li>
 					</ul>
-					<aside>Note: Speak briefly about the background of DoSomething.  Talk a bit about the state of the engineering team, dev process and status of the codebase.					
+					<aside class="notes">
+					  Speak briefly about the background of Do Something.
 					</aside>
+				</section>
+				
+				<section>
+					<h2>DoSomething.org: A year ago</h2>
+
+					<ul>
+					  <li class="fragment">Upgrades: Drupal 5 > Drupal 6 > Drupal 7</li>
+					  <li class="fragment">Technical debt out the wazoo</li>
+					  <li class="fragment">Poor performance</li>
+					  <li class="fragment">Loosely enforced development practices</li>
+					</ul>
+					<aside class="notes">
+					  Talk a bit about the state of the engineering team, dev process and status of the codebase.					
+					</aside>
+				</section>
+				
+				<section>
+				  <h2>Problem: Outsourced development</h2>
+				  
+				  <ul>
+				    <li>Black-box products thrown &ldquo;over the wall&rdquo;</li>
+				    <li>No institutional knowledge</li>
+				    <li>Decreased visibility &rarr; increased technical debt</li>
+				  </ul>
+				</section>
+				
+				<section>
+				  <h2>Problem: Loose dev &amp; deploy workflow</h2>
+				  
+				  <img class="fragment" src="https://i.chzbgr.com/maxW500/6578117120/h7BED5FE4/" />
+				</section>
+				
+				<section>
+				  <h2>Problem: Lack of Drupal knowledge</h2>
+				  
+				  <ul>
+				    <li><q>&ldquo;I wish Drupal had a theming layer.&rdquo;</q></li>
+				    <li>250+ modules</li>
+				    <li>Missing content strategy</li>
+				</section>
+				
+				<section>
+				  <h2>Problem: Unhappy developers</h2>
+				  
+				  <ul>
+				    <li><q>&ldquo;I spent 90% of my time wrestling with the platform and fixing problems.&rdquo;</q></li>
+				    <li>Technical debt &rarr; Unhappiness</li>
+				    <li>No way to attract talent!</li>
+				    <li>No way to <em>retain</em> talent!</li>
 				</section>
 
 				<section>
-					<h2>Introducing Change</h2>
-					<aside>Speak about the process and formula for introducing change</aside>
+					<h2>Introducing change</h2>
+					
+					<img src="http://images5.fanpop.com/image/photos/25000000/Change-LOL-XD-south-park-25090788-1260-1596.png"
+					  width="50%" />
+					
+					<aside class="notes">Speak about the process and formula for introducing change</aside>
 				</section>
 
 				<section>
 					<h2>Destroy the Silos</h2>
 					<img src="http://gifs.gifbin.com/092012/1348245247_funny_silo_demolition.gif" />
+					
+					<p>...One step at a time</p>
 
-					<aside>Note: Speak about the process and formula for introducing change</aside>
+					<aside class="notes">Speak about the process and formula for introducing change</aside>
 				</section>
 
 				<section>
-					<h2>Destroy the Silos</h2>
+					<h2>Destroy the Silos: Deets</h2>
 					<ul>
-					  <li>Continue organizational process improvements around new development</li>
-		  			  <li>Code Review - Github Pull Requests</li>
-		  			  <li>Asyncronous Chat - Hipchat</li>
-		  			  <li>Org accesible issue tracking system - Trello</li>
-				    </ul>
+					  <li>Enforce process improvements around new development</li>
+            <li>Code review: Github pull requests</li>
+            <li>Asynchronous chat: Hipchat</li>
+            <li>Org-accessible issue tracking system: Trello</li>
+          </ul>
 
-					<aside>Note: Speak briefly about how there was not much collaboration between developers.  ommon place for employees to stop by a developers desk with some issue or task.  Issues were discussed via email threads.</aside>
+					<aside class="notes">Speak briefly about how there was not much collaboration between developers.  Commonplace for employees to stop by a developer's desk with some issue or task. Issues were discussed via email threads.</aside>
 				</section>
 
 				<section>
 					<h2>Automate The Things</h2>
 					
-					<aside>Note: Speak a bit about hubot, jenkins and automating deployments.  Also about automating useful tasks.</aside>
+					<img src="http://i.qkme.me/3v5upz.jpg" />
+					
+					<aside class="notes">Speak a bit about Hubot, Jenkins and automating deployments. Also about automating useful tasks.</aside>
 				</section>
 
 				<section>
-				  <h2>Whats Next?</h2>
+				  <h2>What's Next?</h2>
 
 				  <ul>
-				  	<li>Improving Test Coverage</li>
-				  	<li>Better alerts and logging</li>
-				  	<li>Issue tracking improvements (Trello specific since it does lack many things)</li>
+				  	<li class="fragment">Improving test coverage</li>
+				  	<li class="fragment">Improving continuous integration</li>
+				  	<li class="fragment">Vagrant (No more &ldquo;It works for me&rdquo;)</li>
+				  	<li class="fragment">Better alerts and logging</li>
+				  	<li class="fragment">Issue tracking improvements (Trello-specific since it does lack many things)</li>
+				  	<li class="fragment">Externalize tech's bandwidth constraints (Kanban style)</li>
+				  	<li class="fragment">More decision power to individual devs</li>
 				  </ul>
 			    </section>
 
